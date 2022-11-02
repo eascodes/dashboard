@@ -159,7 +159,8 @@ button:hover {
 .card h5:hover,
 .announcelist h6:hover,
 .sidebar li:nth-child(even):hover,
-.header-grid1 p:hover {
+.header-grid1 p:hover,
+.handle:hover {
     cursor: pointer;
     text-decoration: underline;
 }
