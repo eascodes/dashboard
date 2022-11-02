@@ -18,8 +18,9 @@ ul {
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
-    margin: 10px 10px 20px 20px;
+    padding: 10px 10px 20px 20px;
     font-weight: 500;
+    border-bottom: solid rgb(184, 184, 184) 5px;
 }
 
 .header-grid1 {
@@ -94,7 +95,7 @@ input[type="search"] {
 button {
     border: none;
     text-decoration: none;
-    background-color: #166534;
+    background-color: orange;
     color: white;
     width: 5rem;
     height: 2rem;
@@ -112,6 +113,11 @@ button {
     padding-top: 20px;
 }
 
+.main-titles {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 /*MAIN > PROJECTS*/
 
 .projects {
@@ -124,14 +130,32 @@ button {
 
 .card {
     background-color: white;
-    height: 200px;
+    height: 150px;
+    border-radius: 5px;
+    border-left: orange solid 5px;
+    padding: 30px 10px 0 10px;
+}
+
+.card p {
+    font-size: 0.8rem;
 }
 
 .cards-container {
-    margin: 0 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-icon-grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-items: end;
+    padding-right: 10px;
+}
+
+.card img {
+    width: 1rem;
 }
 
 /*MAIN > ANNOUNCEMENTS*/
@@ -139,6 +163,10 @@ button {
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
     margin: 0 10px 10px 10px;
+}
+
+.announcelist {
+    margin-top: 10px;
 }
 
 .announcements > ul {
