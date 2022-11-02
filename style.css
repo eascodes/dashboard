@@ -41,6 +41,7 @@ input[type="search"] {
     background-color: rgb(229, 229, 228);
     border: none;
     height: 1.5rem;
+    padding-left: 10px;
 }
 
 .search-icon {
@@ -62,6 +63,10 @@ input[type="search"] {
 
 .header-grid1 p {
     padding-left: 10px;
+}
+
+.header img:hover {
+    cursor: pointer;
 }
 
 .header-grid2 {
@@ -106,6 +111,13 @@ button {
     font-size: 0.7rem;
 }
 
+button:hover {
+    background-color: white;
+    border: orange solid 2px;
+    color: orange;
+    cursor: pointer;
+}
+
 /*MAIN*/
 
 .main {
@@ -144,6 +156,14 @@ button {
     font-size: 0.8rem;
 }
 
+.card h5:hover,
+.announcelist h6:hover,
+.sidebar li:nth-child(even):hover,
+.header-grid1 p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .cards-container {
     margin: 10px 10px 10px 10px;
     display: grid;
@@ -160,6 +180,10 @@ button {
 
 .card img {
     width: 1rem;
+}
+
+.card img:hover {
+    cursor: pointer;
 }
 
 /*MAIN > ANNOUNCEMENTS*/
@@ -210,6 +234,11 @@ ul li p {
     box-shadow: 2px 2px 2px rgb(184, 184, 184);
 }
 
+.trendlist div:hover,
+.trendlist p:hover {
+    cursor: pointer;
+}
+
 .trendlist p {
     font-size: 0.7rem;
     padding-left: 5px;
@@ -237,6 +266,10 @@ ul li p {
     align-self: end;
 }
 
+.trendlist p:nth-child(3n+2):hover {
+    text-decoration: underline;
+}
+
 .trendlist p:nth-child(3n+3) {
     align-self: start;
 }
@@ -250,6 +283,11 @@ ul li p {
 
 .sidebar li {
     font-weight: 500;
+}
+
+.sidebar li:hover,
+img[src="assets/dash.svg"]:hover {
+    cursor: pointer;
 }
 
 .logo > img {
